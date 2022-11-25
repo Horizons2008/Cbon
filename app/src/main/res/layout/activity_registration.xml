@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="35dp"
+        android:visibility="gone"
+
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/logo_cbon_inscription"/>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginTop="10dp"
+
+
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inscription"
+                android:layout_marginBottom="20dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/dancingscript"
+                android:textColor="@color/PrimaryColor"
+                android:gravity="center"
+                />
+            <Switch
+                android:id="@+id/Switch_type"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:text="Particulier  "
+                android:thumb="@drawable/bg_switch"
+                app:track="@drawable/bg_switch_track"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:drawableStart="@drawable/person2_24"
+
+                android:ems="5"
+                android:paddingStart="5dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Phone"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/TV_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:drawableStart="@drawable/phone_24"
+                android:elevation="5dp"
+
+                android:ems="5"
+                android:paddingStart="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nom Utilisateur"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:drawableStart="@drawable/person2_24"
+                android:elevation="5dp"
+
+                android:ems="5"
+                android:paddingStart="5dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Pasword"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:drawableStart="@drawable/lock2_24"
+                android:elevation="5dp"
+
+                android:ems="5"
+                android:paddingStart="5dp"
+
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Confirm Password"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:drawableStart="@drawable/lock2_24"
+                android:elevation="5dp"
+
+                android:ems="5"
+                android:paddingStart="5dp"
+
+
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="wilaya"
+                android:textSize="16dp" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/bg_spinner_2"
+
+
+
+
+                android:paddingStart="5dp"
+
+
+                />
+
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mybutton"
+                android:paddingHorizontal="70dp"
+
+                android:layout_marginBottom="15dp"
+                android:text="Continuer"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textSize="19dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
